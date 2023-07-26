@@ -241,7 +241,7 @@ function renderThirdSection(){
     gameCointainer.innerHTML = '';
     const templateThirdSectionCopy = templateThirdSection.cloneNode(true).content;
     
-    const chronometerMinute_Second = chronometerOutput.slice(4,8).split(':').join('.') + 's';
+    const chronometerMinute_Second = chronometerOutput.slice(4,8).split(':').join(':') + 's';
     // Getting DOM elements
     templateThirdSectionCopy.querySelector('.score-time').textContent = chronometerMinute_Second;
     templateThirdSectionCopy.querySelector('.footer button').addEventListener('click', renderFirstSection);
@@ -308,6 +308,7 @@ function startChronometer(){
             hoursOutput = `${hours}`;
         }
         chronometerOutput = `${hoursOutput}:${minutesOutput}:${secondsOutput}`;
+        console.log(chronometer);
     }, 1000);
 }
 
