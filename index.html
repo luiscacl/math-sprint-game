@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Sprint Game</title>
-    <link rel="stylesheet" href="/15°Math-Sprint-Game/styles.css">
-    <script src="/15°Math-Sprint-Game/script.js" defer></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
     <!-- ------------------------------------------------------- -->
     <template id="section-one">
-        <div class="game-title-container">
-            <h1 class="title">Math Sprint Game</h1>
+      <div class="game-title-container">
+        <h1 class="title">Math Sprint Game</h1>
+      </div>
+      <div class="options-container center-elements">
+        <div class="option">
+          <h1 class="option-title">10 Questions</h1>
+          <div class="score-container">
+            <p class="score-title">Best Score</p>
+            <h1 class="score"></h1>
+          </div>
         </div>
-        <div class="options-container center-elements">
-            <div class="option">
-                <h1 class="option-title">10 Questions</h1>
-                <div class="score-container">
-                    <p class="score-title">Best Score</p>
-                    <h1 class="score"></h1>
-                </div>
-            </div>
-            <div class="option">
-                <h1 class="option-title">20 Questions</h1>
-                <div class="score-container">
-                    <p class="score-title">Best Score</p>
-                    <h1 class="score"></h1>
-                </div>
-            </div>
-            <div class="option">
-                <h1 class="option-title">30 Questions</h1>
-                <div class="score-container">
-                    <p class="score-title">Best Score</p>
-                    <h1 class="score"></h1>
-                </div>
-            </div>
-            <div class="option">
-                <h1 class="option-title">40 Questions</h1>
-                <div class="score-container">
-                    <p class="score-title">Best Score</p>
-                    <h1 class="score"></h1>
-                </div>
-            </div>
+        <div class="option">
+          <h1 class="option-title">20 Questions</h1>
+          <div class="score-container">
+            <p class="score-title">Best Score</p>
+            <h1 class="score"></h1>
+          </div>
         </div>
-        <div class="footer">
-            <button id="start-round-button">Start Round</button>
+        <div class="option">
+          <h1 class="option-title">30 Questions</h1>
+          <div class="score-container">
+            <p class="score-title">Best Score</p>
+            <h1 class="score"></h1>
+          </div>
         </div>
+        <div class="option">
+          <h1 class="option-title">40 Questions</h1>
+          <div class="score-container">
+            <p class="score-title">Best Score</p>
+            <h1 class="score"></h1>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <button id="start-round-button">Start Round</button>
+      </div>
     </template>
     <!-- --------------------------------------------------------->
     <template id="timer">
-        <div class="game-title-container">
-            <h1 class="title">Math Sprint Game</h1>
-        </div>
+      <div class="game-title-container">
+        <h1 class="title">Math Sprint Game</h1>
+      </div>
 
-        <!-- Para que las opciones salgan del grid y no se acomulen creamos otro contenedor padre para que no sea
+      <!-- Para que las opciones salgan del grid y no se acomulen creamos otro contenedor padre para que no sea
         hijo del grid -->
-        <div class="options-container center-elements" >
-            <h1 class="timer-count">3</h1>
-        </div>
+      <div class="options-container center-elements">
+        <h1 class="timer-count">3</h1>
+      </div>
 
-        <div class="footer"></div>
+      <div class="footer"></div>
     </template>
     <!------------------------------------------------------------>
     <template id="section-two">
-        <div class="game-title-container">
-            <h1 class="title"></h1>
-        </div>
+      <div class="game-title-container">
+        <h1 class="title"></h1>
+      </div>
 
-        <!-- Para que las opciones salgan del grid y no se acomulen creamos otro contenedor padre para que no sea
+      <!-- Para que las opciones salgan del grid y no se acomulen creamos otro contenedor padre para que no sea
         hijo del grid -->
-        <div class="options-container">
-            <div class="traslate-options"></div>
-        </div>
+      <div class="options-container">
+        <div class="traslate-options"></div>
+      </div>
 
-        <div class="footer">
-            <button class="wrong-button">Wrong</button>
-            <button class="right-button">Right</button>
-        </div>
+      <div class="footer">
+        <button class="wrong-button">Wrong</button>
+        <button class="right-button">Right</button>
+      </div>
     </template>
     <template id="option-architecture">
-        <div style="justify-content: center;" class="option">
-            <h1 class="option-title">8 X 6 = 48</h1>
-        </div>
+      <div style="justify-content: center" class="option">
+        <h1 class="option-title">8 X 6 = 48</h1>
+      </div>
     </template>
 
     <!----------------------------------------------------------->
     <template id="section-three">
-        <div class="game-title-container">
-            <h1 class="title">Math Sprint Game</h1>
-        </div>
+      <div class="game-title-container">
+        <h1 class="title">Math Sprint Game</h1>
+      </div>
 
-        <!-- Para que las opciones salgan del grid y no se acomulen creamos otro contenedor padre para que no sea
+      <!-- Para que las opciones salgan del grid y no se acomulen creamos otro contenedor padre para que no sea
         hijo del grid -->
-        <div class="options-container center-elements" >
-            <!-- <div class="traslate-options"></div> -->
-            <h1 class="current-time">Your Time</h1>
-            <h1 class="score-time"></h1>
-            <h1 class="best-time"></h1>
-            <h1 class="points-gotten"></h1>
-        </div>
+      <div class="options-container center-elements">
+        <!-- <div class="traslate-options"></div> -->
+        <h1 class="current-time">Your Time</h1>
+        <h1 class="score-time"></h1>
+        <h1 class="best-time"></h1>
+        <h1 class="points-gotten"></h1>
+      </div>
 
-        <div class="footer">
-            <button>Play Again</button>
-        </div>
+      <div class="footer">
+        <button>Play Again</button>
+      </div>
     </template>
     <!------------------------------------------------------------>
     <!-- Container to render all templates -->
     <main>
-        <div class="game-container"></div>
+      <div class="game-container"></div>
     </main>
-</body>
+  </body>
 </html>
